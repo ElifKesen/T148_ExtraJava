@@ -2,7 +2,7 @@ package day01;
 
 import java.util.Scanner;
 
-public class S02_Cay {
+public class S02_Cay_IfElse {
     public static void main(String[] args) {
 /*
          Kullaniciya
@@ -13,26 +13,34 @@ public class S02_Cay {
           (1 kup seker = 2.77 gr)
     */
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan=new Scanner(System.in);
+        System.out.println(" Günde kac bardak cay iciyorsunuz?");
+        double bardak=scan.nextDouble();
 
-        System.out.println("Gunde kac bardak cay iciyorsunuz?");
-        double bardak = scan.nextDouble();
-
-        System.out.println("Her bardak icin kac küp seker kullaniyorsunuz?");
-        double seker = scan.nextDouble();
+        System.out.println("her bardak icin kac küp seker kullaniyorsunuz?");
+        double seker= scan.nextDouble();
 
         //seker kullanmayanlar icin
-        if (seker == 0) {
+        if (seker==0){
             System.out.println("Aferin, boyle devam et :)");
         }
-
-        //seker kullanalar icin hesaplama
-        if (seker > 0) {
-            double yilliksekertuketimi = (bardak * seker * 2.77) * 365 / 1000;
-            double kirkyilliksekertuketimi = yilliksekertuketimi * 40;
+        //seker kullananlar icin
+        if (seker>0){
+            double yilliksekertuketimi=(bardak*seker*2.77)*365/1000;
+            double kirkyilliksekertuketimi=yilliksekertuketimi*40;
 
             System.out.println("Yillik seker tüketiminiz: "+yilliksekertuketimi);
-            System.out.println("Kirk yilllik seker tüketiminiz: "+kirkyilliksekertuketimi);
+            System.out.println("Kirkyillik seker tüketiminiz: "+kirkyilliksekertuketimi);
         }
+
+
+
+
+
+
+
+
+
+
     }
 }
