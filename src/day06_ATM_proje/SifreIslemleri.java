@@ -2,6 +2,7 @@ package day06_ATM_proje;
 
 public class SifreIslemleri {
     public static void sifredegistirme() {
+        GirisIslemleri.scan.nextLine();
         System.out.println("Mevcut sifrenizi giriniz");
         String ksifre = GirisIslemleri.scan.nextLine();
         if (ksifre.equals(GirisIslemleri.sifre)) {
