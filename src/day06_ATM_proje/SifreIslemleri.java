@@ -1,4 +1,4 @@
-package ATM_proje;
+package day06_ATM_proje;
 
 public class SifreIslemleri {
     public static void sifredegistirme() {
